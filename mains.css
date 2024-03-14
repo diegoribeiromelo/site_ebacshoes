@@ -1,0 +1,171 @@
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    }
+
+    .container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding: 16px 0;
+    }
+
+    header {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
+        background-color: #005bd1;
+    }
+
+    header h1, a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .menu {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        gap: 15px;
+
+    }
+
+    .sobre {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 15px;
+    }
+
+    .sobre img {
+        width: 350px;
+        height: auto;
+    }
+
+    h2 {
+        padding: 10px;
+        color: #005bd1;
+        font-style: italic;
+    }
+
+    .sobre p {
+        padding: 10px 0;
+    }
+
+    hr {
+        width: 100%;
+        height: 1px;
+        background-color: #005bd1;
+        border: none;
+    }
+
+    .vendas {
+        display: grid;
+        grid-template-columns: repeat(4, 24%);
+        column-gap: 1%;
+        padding: 30px 0;
+    }
+
+    .vendas h3 {
+        margin: 10px 0;
+    }
+
+    button {
+        font-size: 1.1em;
+        background-color: #005bd1;
+        color: #fff;
+        padding: 5px;
+        width: 100%;
+        border: none;
+        margin: 10px 0;
+        font-weight: bold;
+        border-radius: 4px;
+    }
+
+    @media screen and (max-width: 640px) {
+
+        header h1 {
+            width: 100px;
+        }
+
+        .sobre-a-loja p {
+            font-size: 1.2em;
+
+        }
+
+        .menu {
+            flex-direction: column;
+        }
+        
+        .sobre {
+            flex-direction: column;
+        }
+
+        .sobre img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .conteudo {
+            display: block;
+        }
+        .container {
+            max-width: 90%;
+    
+        }
+        .vendas article {
+            display: block;
+            font-size: 1.2em;
+        }
+        
+        .vendas article img {
+            margin-right: 0;
+        }
+    
+        .vendas {
+            display: block;
+        }
+    
+        .vendas article {
+            margin-bottom: 32px;
+        }
+    
+    
+        header div .container {
+            flex-direction: column;
+        }
+    }
+
+
+    @media screen and (min-width: 641px) and (max-width: 1023px) {
+        
+        .sobre {
+            flex-direction: column;
+        }
+
+        .sobre img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .container {
+            max-width: 90%;
+    
+        }
+    
+        .vendas article {
+            font-size: 1em;
+        }
+    
+        .vendas {
+            display: grid;
+            grid-template-columns: repeat(2, 49%);
+        }
+    }
